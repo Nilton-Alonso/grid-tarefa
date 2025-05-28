@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Define o conjunto de caracteres -->
+  <meta charset="UTF-8">
+
+  <!-- Responsividade: largura da tela e escala inicial -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Ícone da aba do navegador -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Título da página -->
+  <title>Continente Gelado</title>
+
+  <!-- Reset de estilos padrão dos navegadores -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Fonte Google para tipografia -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Metadados para mecanismos de busca -->
+  <meta name="description" content="Conheça o continente Antártida com conteúdo educativo e interativo.">
+
+  <!-- Metatags Open Graph para redes sociais -->
+  <meta property="og:title" content="Continente Gelado - Antártida">
+  <meta property="og:description" content="Explore a Antártida com conteúdo visual, formulário e informações sobre o continente.">
+  
+
+  <!-- Arquivo de estilos CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho com título e menu de navegação -->
+  <header>
+    <nav>
+      <ul class="menu">
+        <!-- Links internos para navegação entre seções -->
+        <li><a href="#Antártida">Antártida</a></li>
+        <li><a href="#Características">Características</a></li>
+        <li><a href="#Formularios">Formulários</a></li>
+        <li><a href="#Painel">Painel</a></li>
+      </ul>
+    </nav>
+    <h1>Continente Gelado</h1>
+  </header>
+
+  <main>
+    <!-- Primeira seção: introdução à Antártida -->
+    <section id="Antártida">
+      <h2>Antártida</h2>
+      <img src="imagem01.jpg" alt="Vista aérea da Antártida">
+      <p><strong>Antártida ou Antártica</strong> Antártida ou Antártica é o mais meridional e o segundo menor dos continentes (maior apenas que a Austrália),com uma superfície de 14 milhões de quilômetros.Rodeia o polo Sul, e por esse motivo está quase completamente coberta por enormes geleiras (glaciares), exceção feita a algumas zonas de elevado aclive nas cadeias montanhosas e à extremidade norte da península Antártica. Sua formação se deu pela separação do antigo supercontinente Gondwana há aproximadamente 100 milhões de anos e seu resfriamento aconteceu nos últimos 35 milhões de anos.</p>
+    </section>
+
+    <!-- Segunda seção: características geográficas e climáticas -->
+    <section id="Características">
+      <h2>Características</h2>
+      <img src="Imagem02.jpg" alt="Paisagem fria da Antártida">
+      <p></p>
+    </section>
+
+    <!-- Terceira seção: formulários lado a lado com CSS Grid -->
+    <section id="Formularios">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta. A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártida, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C.Muitos autores o consideram um grande deserto polar, pela baixa taxa de precipitação no interior do continente.A altitude média da Antártida é de aproximadamente 2 000 metros.Ventanias com velocidades de aproximadamente 100 km/h são comuns e podem durar vários dias.Ventos de até 320 km/h já foram registrados na área costeira.
+      <h2>Formulários de Contato e Pesquisa</h2>
+      <div class="form-grid">
+        <!-- Formulário de contato -->
+        <form>
+          <fieldset>
+            <legend>Contato</legend>
+            <label>Nome: <input type="text" required></label>
+            <label>Email: <input type="email" required></label>
+            <label>Data de Nascimento: <input type="date"></label>
+            <label>País: 
+              <select>
+                <option>Brasil</option>
+                <option>Outro</option>
+              </select>
+            </label>
+            <label>Mensagem: <textarea></textarea></label>
+          </fieldset>
+        </form>
+
+        <!-- Formulário de pesquisa -->
+        <form>
+          <fieldset>
+            <legend>Pesquisa</legend>
+            <label>Nome Completo: <input type="text"></label>
+            <label>Gênero:
+              <label><input type="radio" name="genero" value="M"> Masculino</label>
+              <label><input type="radio" name="genero" value="F"> Feminino</label>
+            </label>
+            <label>Você já ouviu falar da Antártida? <input type="checkbox"></label>
+            <label>Data da visita ao site: <input type="datetime-local"></label>
+            <label>Opinião: <textarea></textarea></label>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <!-- Quarta seção: painel de imagens com diferentes proporções -->
+    <section id="Painel">
+      <h2>Painel de Fotos da Antártida</h2>
+      <div class="painel-grid">
+        <!-- Cada div representa uma foto com background cover -->
+        <div class="foto" style="background-image: url('antartida1.avif');"></div>
+        <div class="foto" style="background-image: url('antartida2.avif');"></div>
+        <div class="foto" style="background-image: url('antartida3.avif');"></div>
+        <div class="foto" style="background-image: url('antartida4.avif');"></div>
+        <div class="foto" style="background-image: url('antartida5.avif');"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>© 2025 Continente Gelado. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
